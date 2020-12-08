@@ -34,8 +34,6 @@ public class LoginController {
         try {
             //进行验证，这里可以捕获异常，然后返回对应信息
             subject.login(usernamePasswordToken);
-//            subject.checkRole("admin");
-//            subject.checkPermissions("query", "add");
         } catch (UnknownAccountException e) {
             log.error("用户名不存在！", e);
             return "用户名不存在！";
