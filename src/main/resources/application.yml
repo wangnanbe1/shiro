@@ -7,7 +7,15 @@ spring:
 server:
   port: 8090
 
-
+retrofit:
+  enable-response-call-adapter: true
+  # 启用日志打印
+  enable-log: true
+  # 连接池配置
+  pool:
+    test1:
+      max-idle-connections: 3
+      keep-alive-second: 100
 logging:
   level:
     com:
