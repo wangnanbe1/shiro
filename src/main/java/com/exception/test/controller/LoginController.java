@@ -2,6 +2,8 @@ package com.exception.test.controller;
 
 import com.alibaba.druid.util.StringUtils;
 import com.exception.test.bean.User;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
@@ -15,11 +17,13 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+/* 类注解 */
+@Api(value = "user login Certification")
 @RestController
 @Slf4j
 public class LoginController {
 
+    @ApiOperation(value = "main mothed for user login", notes = "")
     @GetMapping("/login")
     public String login(@Param("user") User user) {
         if (StringUtils.isEmpty(user.getName()) || StringUtils.isEmpty(user.getPassword())) {

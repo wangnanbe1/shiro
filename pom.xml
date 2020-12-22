@@ -12,7 +12,7 @@
     <artifactId>ExceptionAndReturn</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>test</name>
+    <name>mybatis</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -44,6 +44,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.6</version>
         </dependency>
 
         <dependency>
