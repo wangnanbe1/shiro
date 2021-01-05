@@ -19,6 +19,6 @@ retrofit:
 logging:
   level:
     com:
-      exception: info
+      exception: debug
   file:
-    name: G:/pdfinfo/forqc/spring.log
+    name: F:/pdfinfo/forqc/spring.log
